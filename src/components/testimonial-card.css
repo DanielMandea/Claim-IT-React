@@ -1,0 +1,92 @@
+.testimonial-card-testimonial-card {
+  gap: var(--dl-space-space-twounits);
+  width: 75%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  padding-left: var(--dl-space-space-fourunits);
+  padding-right: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonial-card-stars {
+  width: 116px;
+  height: 19px;
+}
+.testimonial-card-content {
+  color: rgba(0, 8, 66, 1);
+  height: auto;
+  font-size: 24px;
+  align-self: stretch;
+  font-style: Bold;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.testimonial-card-avatar {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.testimonial-card-avatar-image {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+}
+.testimonial-card-avatar-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.testimonial-card-avatar-name {
+  color: rgba(0, 8, 66, 1);
+  height: auto;
+  text-align: left;
+  line-height: 150%;
+}
+.testimonial-card-avatar-company {
+  color: rgba(0, 8, 66, 1);
+  height: auto;
+  text-align: left;
+  line-height: 150%;
+}
+.testimonial-card-divider-horizontal {
+  flex: 0 0 auto;
+  width: 60px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-text-primary);
+}
+.testimonial-card-company-logo {
+  width: 140px;
+  height: 56px;
+}
+
+
+
+@media(max-width: 991px) {
+  .testimonial-card-testimonial-card {
+    width: 100%;
+  }
+}
+@media(max-width: 479px) {
+  .testimonial-card-testimonial-card {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .testimonial-card-avatar {
+    flex-direction: column;
+  }
+}
