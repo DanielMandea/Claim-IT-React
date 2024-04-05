@@ -86,10 +86,10 @@
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
-  padding-top: var(--dl-space-space-twounits);
+  padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
   justify-content: space-between;
 }
 .button-primary {
@@ -188,6 +188,7 @@
 }
 .accordion-header {
   width: 100%;
+  cursor: pointer;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -269,7 +270,12 @@
   font-stretch: normal;
   letter-spacing: 0em;
 }
-
+@media(max-width: 991px) {
+  .navbar-root-container {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+}
 @media(max-width: 767px) {
   .navbar-root-container {
     padding-left: var(--dl-space-space-twounits);
@@ -293,10 +299,8 @@
 }
 @media(max-width: 479px) {
   .navbar-root-container {
-    padding-top: var(--dl-space-space-oneandhalfunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
-    padding-bottom: var(--dl-space-space-oneandhalfunits);
   }
   .hero-container {
     height: calc(100vh - 80px);

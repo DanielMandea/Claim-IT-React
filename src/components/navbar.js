@@ -7,10 +7,7 @@ import './navbar.css'
 const Navbar = (props) => {
   return (
     <div className={`navbar-wrapper ${props.rootClassName} `}>
-      <header
-        data-thq="thq-navbar"
-        className="navbar-root-container navbar-navbar-interactive"
-      >
+      <header data-thq="thq-navbar" className="navbar-root-container">
         <img alt={props.logoAlt} src={props.logoSrc} className="navbar-logo" />
         <div data-thq="thq-navbar-nav" className="navbar-desktop-menu">
           <nav className="navbar-links">

@@ -18,6 +18,7 @@
 }
 .tab-selector2-tab-horizontal {
   gap: var(--dl-space-space-twounits);
+  cursor: pointer;
   display: flex;
   overflow: hidden;
   align-self: stretch;
@@ -66,7 +67,8 @@
   line-height: 150%;
 }
 .tab-selector2-tab-horizontal1 {
-  gap: 32px;
+  gap: var(--dl-space-space-twounits);
+  cursor: pointer;
   display: flex;
   overflow: hidden;
   align-self: stretch;
@@ -115,7 +117,8 @@
   line-height: 150%;
 }
 .tab-selector2-tab-horizontal2 {
-  gap: 32px;
+  gap: var(--dl-space-space-twounits);
+  cursor: pointer;
   display: flex;
   overflow: hidden;
   align-self: stretch;
